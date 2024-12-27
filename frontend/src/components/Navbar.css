@@ -1,0 +1,90 @@
+/* General styles for the navbar */
+.navbar-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    z-index: 1000;
+    background-color: transparent;
+  }
+  
+  /* Inner content of the navbar */
+  .navbar-inner {
+    display: flex;
+    justify-content: space-between; /* Spread items to the edges (left and right) */
+    width: 70vw;
+    align-items: center;
+    margin: 0 auto;
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    padding: 0 15px;
+  }
+  
+  /* Theme-specific styles */
+  .navbar-container.light {
+    color: #fff;
+  }
+  
+  .navbar-container.dark {
+    color: #000;
+  }
+  
+  /* Inner container for different themes */
+  .navbar-inner.light {
+    background-color: white;
+    color: black;
+  }
+  
+  .navbar-inner.dark {
+    background-color: black;
+    color: white;
+  }
+  
+  /* Logo styles */
+  .navbar-logo {
+    font-size: 1.5rem;
+    font-family: sans-serif;
+    cursor: pointer;
+  }
+  
+  /* Buttons container */
+  .navbar-buttons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Button styles */
+  .generate-email-btn {
+    background: #0077ff;
+    border-radius: 6px;
+    padding: 5px;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+  }
+  
+  /* Theme toggle button styles */
+  .theme-toggle-btn {
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-family: sans-serif;
+    width: 100px;
+    box-shadow: none;
+  }
+  
+  /* Light theme specific toggle button styles */
+  .theme-toggle-btn.light {
+    background-color: white;
+    color: black;
+  }
+  
+  /* Dark theme specific toggle button styles */
+  .theme-toggle-btn.dark {
+    background-color: black;
+    color: white;
+  }
+  
